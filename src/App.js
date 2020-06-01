@@ -13,11 +13,8 @@ import { selectAppLoading } from "./store/appState/selectors";
 import { getUserWithStoredToken } from "./store/user/actions";
 import { Jumbotron } from "react-bootstrap";
 import HomePages from "./pages/Homepages/index";
-// const Home = () => (
-//   <Jumbotron>
-//     <h1>Home</h1>
-//   </Jumbotron>
-// );
+import DetailHomePage from "./pages/DetailHomePage/index";
+
 const Other = () => (
   <Jumbotron>
     <h1>Other</h1>
@@ -39,7 +36,7 @@ function App() {
       {isLoading ? <Loading /> : null}
       <Switch>
         <Route exact path="/" component={HomePages} />
-        <Route path="homepages/:id" component = {DetailHomePage}
+        <Route path="/homepages/:id" component={DetailHomePage} />
         <Route path="/other" component={Other} />
         <Route path="/signup" component={SignUp} />
         <Route path="/login" component={Login} />

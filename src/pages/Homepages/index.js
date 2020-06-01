@@ -13,7 +13,7 @@ export default function HomePages() {
   useEffect(() => {
     dispatch(fetchHomepages());
   }, [dispatch]);
-  console.log("hompages by useSeletor", homepages);
+  // console.log("hompages by useSeletor", homepages);
 
   return (
     <>

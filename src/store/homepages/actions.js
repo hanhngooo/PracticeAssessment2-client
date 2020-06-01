@@ -15,7 +15,7 @@ export const fetchHomepages = () => {
       `${apiUrl}/homepages?limit=${DEFAULT_PAGINATION_LIMIT}&offset=${homepagesCount}`
     );
 
-    console.log("homepages", response.data);
+    // console.log("homepages", response.data);
     dispatch(fetchHomepagesSuccess(response.data.rows));
   };
 };
