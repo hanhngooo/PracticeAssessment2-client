@@ -12,7 +12,7 @@ export default function StoryCards(props) {
             <img
               src={story.imageUrl}
               alt={story.name}
-              className="d-block w-100"
+              className="d-block w-100 "
             />
             <Carousel.Caption
               style={{

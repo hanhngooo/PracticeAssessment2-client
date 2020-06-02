@@ -14,12 +14,7 @@ import { getUserWithStoredToken } from "./store/user/actions";
 import { Jumbotron } from "react-bootstrap";
 import HomePages from "./pages/Homepages/index";
 import DetailHomePage from "./pages/DetailHomePage/index";
-
-const Other = () => (
-  <Jumbotron>
-    <h1>Other</h1>
-  </Jumbotron>
-);
+import MyHomepage from "./pages/MyHomePage/index";
 
 function App() {
   const dispatch = useDispatch();
@@ -37,7 +32,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePages} />
         <Route path="/homepages/:id" component={DetailHomePage} />
-        <Route path="/other" component={Other} />
+        <Route path="/myHomepage" component={MyHomepage} />
+
         <Route path="/signup" component={SignUp} />
         <Route path="/login" component={Login} />
       </Switch>
